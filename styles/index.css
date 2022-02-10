@@ -1,0 +1,36 @@
+body {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    min-height: 594px;
+    max-width: 954px;
+    width: 100%;
+    background: #BE0909;
+    display: flex;
+    flex-direction: row;
+}
+.form-conatiner {
+    background-color: aqua;
+    min-height: 594px;
+    max-width: 609px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.orange-container {
+    min-width: 345px;
+    width: 100px;
+    background-color: #FFB039;
+    display: flex;
+    flex-wrap: wrap;
+}
+.duck-pic {
+    position: relative;
+    right: 260px;
+    top: 55px;
+}
