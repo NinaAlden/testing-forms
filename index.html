@@ -4,19 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <title>Forms</title>
 </head>
 <body>
     <header class="header">
-        <h1>THIS IS THE HEADLINE</h1>
+        <h1>ADOPTION FORM</h1>
+        <h2 class="main-info">Would you like to adopt a rubber duck?
+            <br> 
+            Please fill out the form below:</h2>
     </header>
     <div class="container">
         <div class="form-conatiner">
-            <form action="">
-                <input type="e-mail" placeholder="Your Email">
-                <textarea name="message" id="" cols="10" rows="3"></textarea>
-                <button type="submit">Submit</button>
+            <form class="form" action="" >
+                <label for="name" class="label">Full name</label>
+                <input class="input-area" type="text" id="name" 
+                placeholder="Enter your name" required autofocus maxlength="30">
+                <div class="line"></div>
+                <label for="e-mail" class="label">E-Mail</label>
+                <input class="input-area" type="e-mail" 
+                placeholder="Your Email" required autofocus maxlength="30" 
+                minlength="5">
+                <div class="line"></div>
+                <label for="select" class="label">What type of color would 
+                    you like to adopt?</label>
+                    <select class="select" id="select"> 
+                        <option>Blue</option>    
+                        <option selected>Yellow (popular)</option>
+						<option>Green</option>
+						<option>Red</option>
+					</select>
+                <label for="letter" class="label">Personal Letter</label>
+                <textarea class="text-box" id="letter" cols="10" rows="10" 
+                required autofocus minlength="10"
+                placeholder="Please write briefly about yourself.."></textarea>
+                <button class="submit-btn" type="submit" disabled>SUBMIT</button>
             </form>
         </div>
         <div class="orange-container">
@@ -25,4 +50,4 @@
         </div>
     </div>
 </body>
-</html>
+</html> 
